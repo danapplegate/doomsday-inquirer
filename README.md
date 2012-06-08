@@ -67,4 +67,17 @@ need to bring a laptop with a capable text editor like Text Wrangler or Sublime 
 send out a prep document showing you how to set up your very own web server on 
 it, so we can dive right in and cover as much ground as possible.
 
+Teacher Credentials
+-------------------
+
+Dan Applegate is an engineer at Skillshare. Although he has always loved
+computers and taught himself to program in his pre-teen years, Dan spent an
+equal amount of time acting in school and community theatre productions. After
+graduating _magna cum laude_ from Wake Forest University with degrees in Theatre
+and Computer Science, he spent 9 months as an acting apprentice at the Actors
+Theatre of Louisville, before moving to New York in 2010. Prior to working with
+the Skillshare team to help democratize education, Dan worked as a web developer
+at the award-winning digital agency [Rokkan](http://www.rokkan.com), building highly interactive and
+dynamic sites such as [Ford Escape Routes](http://www.escaperoutes.com).
+
 http://trends.builtwith.com/framework/PHP
