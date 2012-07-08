@@ -15,6 +15,33 @@ h2.subheading {
   font-style: italic;
 }
 
+/* Navbar styles */
+.navbar .nav-greeting {
+  background-color: #08C;
+  color: #fff;
+  margin: 5px 0px;
+  padding: 5px 10px;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+}
+
+.greeting {
+  margin-left: 10px;
+}
+
+/* Sidebar styles */
+.sidebar .nav-list > li > a {
+  margin-left: -5px;
+  margin-right: -5px;
+  padding-left: 20px;
+}
+
+.sidebar .nav-list .nav-header i {
+  position: relative;
+  left: -5px;
+}
+
 /* Article styles */
 article > h2 {
   margin-bottom: 20px;
