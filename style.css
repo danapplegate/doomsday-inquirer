@@ -1,0 +1,25 @@
+@import url(assets/css/bootstrap.css);
+@import url(assets/css/bootstrap-responsive.css);
+
+/* Preserve top padding for floating header bar */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+h1.brand {
+  font-variant: small-caps;
+}
+
+h2.subheading {
+  font-style: italic;
+}
+
+/* Article styles */
+article > h2 {
+  margin-bottom: 20px;
+}
+
+img.article {
+  margin: 0px 20px 20px 0px;
+}
