@@ -1,6 +1,5 @@
 <?php
-$title = "The Doomsday Weekly";
-$tagline = "The Last News Source You'll Ever Need";
+include '../structure/init.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
