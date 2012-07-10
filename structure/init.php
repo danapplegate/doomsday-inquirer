@@ -23,3 +23,8 @@ $checklist_items = array(
         'tip' => 'Obtain SPF 1,000,000 sunscreen for stronger solar rays, due to meteor impact pushing Earth closer to Sun',
     )
 );
+
+$user = 'Visitor';
+if (isset($_GET['user'])) {
+    $user = $_GET['user'];
+}
