@@ -58,7 +58,10 @@ if (!function_exists('insertComment')) {
 
         $statement = $db->prepare('INSERT INTO comments (article_slug, name, message) VALUES (?, ?, ?)');
 
-        $statement->execute(array($slug, $name, $message));
-        var_dump($statement->errorInfo());
+        $result = $statement->execute(array($slug, $name, $message));
+        if ($statement->errorCode() !== PDO::ERR_NONE) {
+            var_dump($statement->errorInfo());
+        }
+        return $result;
     }
 }
