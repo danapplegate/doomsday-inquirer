@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+if [ -a ./structure ]
+then
+    rm -rf ./structure
+fi
+rm ./checklist.*
+rm ./index.*
+rm -rf ./news
+
+cp -R ./checkpoints/$1/* ./
