@@ -131,7 +131,7 @@ include '../structure/init.php';
 
       <footer>
         <div>
-        <span class="timestamp pull-right">Page last retrieved <?php echo date('H:i:sa M jS, Y'); ?></span>
+        <span class="timestamp pull-right"><?php printRefreshTimestamp(); ?></span>
         <p>&copy; <?php echo $title; ?> 2012</p>
         <p class="tagline"><?php echo $tagline; ?></p>
       </div>
