@@ -70,9 +70,9 @@ include 'structure/init.php';
       <div class="row">
         <div class="span8">
           <ol>
-            <li>Dig a bomb shelter</li>
-            <li>Stockpile guns for inevitable zombie invasion</li>
-            <li>Fashion tinfoil hats to prevent alien mind control</li>
+            <?php foreach ($checklist_items as $item) : ?>
+                <li><?php echo $item; ?></li>
+            <?php endforeach; ?>
           </ol>
         </div>
         
