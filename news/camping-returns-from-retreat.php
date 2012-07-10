@@ -51,7 +51,7 @@
             <ul class="nav">
               <li><a href="../"><i class="icon-home icon-white"></i>Home</a></li>
               <li class="active"><a href="../news"><i class="icon-globe icon-white"></i>News</a></li>
-              <li><a href="../checklist.html"><i class="icon-th-list icon-white"></i>Checklist</a></li>
+              <li><a href="../checklist.php"><i class="icon-th-list icon-white"></i>Checklist</a></li>
             </ul>
           </div><!--/.nav-collapse -->
           <div class="nav-greeting pull-right">
@@ -128,7 +128,7 @@
 
       <footer>
         <div>
-        <span class="timestamp pull-right">Page last retrieved -</span>
+        <span class="timestamp pull-right">Page last retrieved <?php echo date('H:i:sa M jS, Y'); ?></span>
         <p>&copy; The Doomsday Inquirer 2012</p>
         <p class="tagline">The Day-After-Tomorrow's News, Today</p>
       </div>

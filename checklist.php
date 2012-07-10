@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>The Doomsday Inquirer > The Day-After-Tomorrow's News, Today</title>
+    <title>The Doomsday Inquirer > Checklist</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="From meteors to astrological predictions, we've got you covered with the latest breaking news on the coming apocalypse.">
     <meta name="author" content="Dan Applegate">
@@ -48,9 +48,9 @@
           <a class="brand" href="#">The Doomsday Inquirer</a>
           <div class="nav-collapse">
             <ul class="nav">
-              <li class="active"><a href="#"><i class="icon-home icon-white"></i>Home</a></li>
+              <li><a href="./"><i class="icon-home icon-white"></i>Home</a></li>
               <li><a href="news/"><i class="icon-globe icon-white"></i>News</a></li>
-              <li><a href="checklist.html"><i class="icon-th-list icon-white"></i>Checklist</a></li>
+              <li class="active"><a href="#"><i class="icon-th-list icon-white"></i>Checklist</a></li>
             </ul>
           </div><!--/.nav-collapse -->
           <div class="nav-greeting pull-right">
@@ -61,25 +61,16 @@
     </div>
 
     <div class="container">
-
-      <!-- Main hero unit for a primary marketing message or call to action -->
-      <div class="hero-unit">
-        <hgroup>
-          <h1 class="brand">The Doomsday Inquirer</h1>
-          <h2 class="tagline">The Day-After-Tomorrow's News, Today</h2>
-        </hgroup>
-        <p class="lead">From meteors to astrological predictions, we've got you covered with the latest breaking news on the coming apocalypse.</p>
+      <div class="page-header">
+        <h1>Apocalypse Survival Checklist</h1> 
       </div>
-
-      <!-- Example row of columns -->
       <div class="row">
         <div class="span8">
-          <article>
-            <h2><a href="news/camping-returns-from-retreat.html" title="Camping Returns from Retreat, Reveals His Latest Prediction">Camping Returns from Retreat, Reveals His Latest Prediction</a></h2>
-            <img src="assets/img/harold-camping.jpeg" alt="Harold Camping makes a prediction" class="article pull-left" />
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In interdum, quam vitae varius volutpat, est massa consectetur dolor, sed euismod nulla felis non nibh. Quisque at risus nec dui sollicitudin fringilla. Etiam lacus elit, adipiscing at gravida eu, commodo id orci. In imperdiet, nunc et laoreet rutrum, quam libero hendrerit odio, et vehicula lectus augue ut turpis. Fusce faucibus quam ut turpis ultrices blandit dapibus felis imperdiet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec at convallis nulla. Etiam posuere tempor ipsum, quis dignissim augue venenatis sit amet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus porta rutrum nisl, sit amet rutrum justo dapibus eleifend. Mauris porta, lorem a hendrerit tristique, felis felis porttitor massa, quis egestas quam felis vestibulum risus.</p>
-            <p><a class="btn pull-right" href="news/camping-returns-from-retreat.html">Read More &raquo;</a></p>
-          </article>
+          <ol>
+            <li>Dig a bomb shelter</li>
+            <li>Stockpile guns for inevitable zombie invasion</li>
+            <li>Fashion tinfoil hats to prevent alien mind control</li>
+          </ol>
         </div>
         <div class="sidebar span4">
           <div class="well">
@@ -88,9 +79,9 @@
               <li class="nav-header"><i class="icon-list"></i>Site Navigation</li>
               <li class="active"><a href="#">Home</a></li>
               <li><a href="news/">News</a></li>
-              <li><a href="checklist.html">Checklist</a></li>
+              <li><a href="checklist.php">Checklist</a></li>
               <li class="nav-header"><i class="icon-globe"></i>Latest News</li>
-              <li><a href="news/camping-returns-from-retreat.html" title="Camping Returns from Retreat, Reveals His Latest Prediction">Camping Returns from Retreat</a></li> 
+              <li><a href="news/camping-returns-from-retreat.php" title="Camping Returns from Retreat, Reveals His Latest Prediction">Camping Returns from Retreat</a></li> 
               <li><a href="news/" title="More News...">More News...</a></li>
               <li class="nav-header"><i class="icon-share"></i>External Links</li>
               <li><a href="http://2012apocalypse.net/" target="_blank" title="2012 Apocalypse Info">2012 Apocalypse Info</a></li>
@@ -98,13 +89,13 @@
               <li><a href="http://youtu.be/Z0GFRcFm-aY" target="_blank" title="Anthem Track">Anthem Track</a></li>
             </ul>
           </div>
+        </div><!-- .row -->
        </div>
-      </div>
 
       <hr>
 
       <footer>
-        <span class="timestamp pull-right">Page last retrieved -</span>
+        <span class="timestamp pull-right">Page last retrieved <?php echo date('H:i:sa M jS, Y'); ?></span>
         <p>&copy; The Doomsday Inquirer 2012</p>
         <p class="tagline">The Day-After-Tomorrow's News, Today</p>
       </footer>
