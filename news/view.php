@@ -13,6 +13,13 @@ if (isset($_GET['slug'])) {
 // from the GET parameter
 $article = getArticleBySlug($slug);
 
+// Before we retrieve all comments for this article, let's see
+// if the user submitted a new one that we need to add to the database.
+// We can check this by looking at the POST object
+if (isset($_POST['article-slug']) && isset($_POST['commenter-name']) && isset($_POST['message'])) {
+    insertComment($_POST['article-slug'], $_POST['commenter-name'], $_POST['message']);
+}
+
 // Retrieve the comments for this article from the database
 $comments = getCommentsBySlug($slug);
 ?>
@@ -113,7 +120,7 @@ $comments = getCommentsBySlug($slug);
               <div class="comment-form span8 offset1">
                 <h2>Submit a comment!</h2>
                 <form class="well" method="POST" action="#">
-                  <input type="hidden" name="article-slug" value="camping-returns-from-retreat" />
+                    <input type="hidden" name="article-slug" value="<?php echo $slug; ?>" />
                   <label for="commenter-name">Your name</label>
                   <input type="text" name="commenter-name" class="span3" />
                   <label for="message">Your comment</label>
