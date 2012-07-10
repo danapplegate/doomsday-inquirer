@@ -1,8 +1,12 @@
+<?php
+$title = "The Doomsday Weekly";
+$tagline = "The Last News Source You'll Ever Need";
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>The Doomsday Inquirer > News</title>
+    <title><?php echo $title; ?> > News</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="From meteors to astrological predictions, we've got you covered with the latest breaking news on the coming apocalypse.">
     <meta name="author" content="Dan Applegate">
@@ -46,7 +50,7 @@
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
-          <a class="brand" href="../">The Doomsday Inquirer</a>
+        <a class="brand" href="../"><?php echo $title; ?></a>
           <div class="nav-collapse">
             <ul class="nav">
               <li><a href="../"><i class="icon-home icon-white"></i>Home</a></li>
@@ -129,8 +133,8 @@
       <footer>
         <div>
         <span class="timestamp pull-right">Page last retrieved <?php echo date('H:i:sa M jS, Y'); ?></span>
-        <p>&copy; The Doomsday Inquirer 2012</p>
-        <p class="tagline">The Day-After-Tomorrow's News, Today</p>
+        <p>&copy; <?php echo $title; ?> 2012</p>
+        <p class="tagline"><?php echo $tagline; ?></p>
       </div>
       </footer>
 
