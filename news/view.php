@@ -12,6 +12,9 @@ if (isset($_GET['slug'])) {
 // Now retrieve the article from the database, using the slug
 // from the GET parameter
 $article = getArticleBySlug($slug);
+
+// Retrieve the comments for this article from the database
+$comments = getCommentsBySlug($slug);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -87,33 +90,26 @@ $article = getArticleBySlug($slug);
             <?php echo $article['content']; ?>
             
             <aside>
+            <?php if ($comments) : ?>
               <div class="comment-list span10 offset1">
                 <h2>Comments</h2>
                 <ul class="unstyled">
+                <?php foreach ($comments as $comment): ?>
                   <li>
                     <div class="row comment">
                       <div class="author span1">
-                        <img src="../assets/img/user-bob.jpg" alt="User Bob profile photo" />
-                        <p class="user-name">Bob</p>
+                      <img src="../assets/img/<?php echo $comment['picture']; ?>" alt="User <?php echo $comment['name']; ?> profile photo" />
+                          <p class="user-name"><?php echo $comment['name']; ?></p>
                       </div><!-- end .author -->
                       <div class="message span6">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non elit ac odio aliquet tempus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur ut mi sit amet dui mollis.</p>
+                          <p><?php echo $comment['message']; ?></p>
                       </div>
                     </div>
                   </li>
-                  <li>
-                    <div class="row comment">
-                      <div class="author span1">
-                        <img src="../assets/img/user-dave.jpg" alt="User Bob profile photo" />
-                        <p class="user-name">Dave</p>
-                      </div><!-- end .author -->
-                      <div class="message span6">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non elit ac odio aliquet tempus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur ut mi sit amet dui mollis.</p>
-                      </div>
-                    </div>
-                  </li>
+                <?php endforeach; ?>
                 </ul>
               </div><!-- comment-list -->
+            <?php endif; ?>
               <div class="comment-form span8 offset1">
                 <h2>Submit a comment!</h2>
                 <form class="well" method="POST" action="#">
