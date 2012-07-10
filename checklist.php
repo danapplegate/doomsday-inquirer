@@ -79,9 +79,9 @@
               <li class="nav-header"><i class="icon-list"></i>Site Navigation</li>
               <li class="active"><a href="#">Home</a></li>
               <li><a href="news/">News</a></li>
-              <li><a href="checklist.html">Checklist</a></li>
+              <li><a href="checklist.php">Checklist</a></li>
               <li class="nav-header"><i class="icon-globe"></i>Latest News</li>
-              <li><a href="news/camping-returns-from-retreat.html" title="Camping Returns from Retreat, Reveals His Latest Prediction">Camping Returns from Retreat</a></li> 
+              <li><a href="news/camping-returns-from-retreat.php" title="Camping Returns from Retreat, Reveals His Latest Prediction">Camping Returns from Retreat</a></li> 
               <li><a href="news/" title="More News...">More News...</a></li>
               <li class="nav-header"><i class="icon-share"></i>External Links</li>
               <li><a href="http://2012apocalypse.net/" target="_blank" title="2012 Apocalypse Info">2012 Apocalypse Info</a></li>
@@ -95,7 +95,7 @@
       <hr>
 
       <footer>
-        <span class="timestamp pull-right">Page last retrieved -</span>
+        <span class="timestamp pull-right">Page last retrieved <?php echo date('H:i:sa M jS, Y'); ?></span>
         <p>&copy; The Doomsday Inquirer 2012</p>
         <p class="tagline">The Day-After-Tomorrow's News, Today</p>
       </footer>
