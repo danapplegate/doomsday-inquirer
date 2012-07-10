@@ -71,7 +71,7 @@ include 'structure/init.php';
         <div class="span8">
           <ol>
             <?php foreach ($checklist_items as $item) : ?>
-                <li><?php echo $item; ?></li>
+                <li><b><?php echo $item['source']; ?> says: </b><?php echo $item['tip']; ?></li>
             <?php endforeach; ?>
           </ol>
         </div>
