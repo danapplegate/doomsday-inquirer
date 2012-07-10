@@ -1,5 +1,11 @@
 <?php
 include '../structure/init.php';
+
+// Load database helper functions
+include '../lib/dbHelpers.php';
+
+// Retrieve all articles from database
+$articles = getArticles();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -66,16 +72,18 @@ include '../structure/init.php';
 
     <div class="container">
 
+    <?php foreach ($articles as $article) : ?>
     <div class="row">
       <div class="span12">
         <article>
-          <a href="../news/camping-returns-from-retreat.php" title="Camping Returns from Retreat, Reveals His Latest Prediction"><img src="../assets/img/harold-camping.jpeg" alt="Harold Camping makes a prediction" class="article pull-left" /></a>
-          <h2><a href="../news/camping-returns-from-retreat.php" title="Camping Returns from Retreat, Reveals His Latest Prediction">Camping Returns from Retreat, Reveals His Latest Prediction</a></h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In interdum, quam vitae varius volutpat, est massa consectetur dolor, sed euismod nulla felis non nibh. Quisque at risus nec dui sollicitudin fringilla. Etiam lacus elit, adipiscing at gravida eu, commodo id orci. In imperdiet, nunc et laoreet rutrum, quam libero hendrerit odio, et vehicula lectus augue ut turpis. Fusce faucibus quam ut turpis ultrices blandit dapibus felis imperdiet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec at convallis nulla. Etiam posuere tempor ipsum, quis dignissim augue venenatis sit amet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus porta rutrum nisl, sit amet rutrum justo dapibus eleifend. Mauris porta, lorem a hendrerit tristique, felis felis porttitor massa, quis egestas quam felis vestibulum risus.</p>
-          <p><a class="btn pull-right" href="../news/camping-returns-from-retreat.php">Read More &raquo;</a></p>
+        <a href="../news/view.php?slug=<?php echo $article['slug']; ?>" title="<?php echo $article['title']; ?>"><img src="../assets/img/<?php echo $article['image']; ?>" alt="Article thumbnail" class="article pull-left" /></a>
+        <h2><a href="../news/view.php?slug=<?php echo $article['slug']; ?>" title="<?php echo $article['title']; ?>"><?php echo $article['title']; ?></a></h2>
+        <p><?php echo $article['excerpt']; ?></p>
+          <p><a class="btn pull-right" href="../news/view.php?slug=<?php echo $article['slug']; ?>">Read More &raquo;</a></p>
         </article>
       </div>
     </div>
+    <?php endforeach; ?>
     <hr>
 
     <footer>
