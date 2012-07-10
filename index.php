@@ -57,7 +57,7 @@ include 'structure/init.php';
             </ul>
           </div><!--/.nav-collapse -->
           <div class="nav-greeting pull-right">
-            <i class="icon-user"></i><span class="greeting">Welcome!</span>
+          <i class="icon-user"></i><span class="greeting">Welcome, <?php echo $user; ?>!</span>
           </div>
         </div>
       </div>
