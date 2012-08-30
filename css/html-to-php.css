@@ -1,0 +1,99 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* General typographical styles */
+.raleway {
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+}
+
+.ubuntu {
+    font-family: 'Ubuntu', Tahoma, sans-serif;
+}
+
+.ubuntu-mono {
+    font-family: 'Ubuntu Mono', Courier;
+}
+
+h1 {
+    font-size: 72px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+body {
+    background: -moz-linear-gradient(left, rgba(153,153,204,0.65) 0%, rgba(255,255,255,0) 50%, rgba(153,153,204,0.65) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(153,153,204,0.65)), color-stop(50%,rgba(255,255,255,0)), color-stop(100%,rgba(153,153,204,0.65))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, rgba(153,153,204,0.65) 0%,rgba(255,255,255,0) 50%,rgba(153,153,204,0.65) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, rgba(153,153,204,0.65) 0%,rgba(255,255,255,0) 50%,rgba(153,153,204,0.65) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, rgba(153,153,204,0.65) 0%,rgba(255,255,255,0) 50%,rgba(153,153,204,0.65) 100%); /* IE10+ */
+    background: linear-gradient(to right, rgba(153,153,204,0.65) 0%,rgba(255,255,255,0) 50%,rgba(153,153,204,0.65) 100%); /* W3C */
+
+    background-image: linear-gradient(bottom, rgb(153,153,204) 60%, rgb(196,196,245) 10%);
+    background-image: -o-linear-gradient(bottom, rgb(153,153,204) 60%, rgb(196,196,245) 10%);
+    background-image: -moz-linear-gradient(bottom, rgb(153,153,204) 60%, rgb(196,196,245) 10%);
+    background-image: -webkit-linear-gradient(bottom, rgb(153,153,204) 60%, rgb(196,196,245) 10%);
+    background-image: -ms-linear-gradient(bottom, rgb(153,153,204) 60%, rgb(196,196,245) 10%);
+
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.6, rgb(153,153,204)),
+        color-stop(0.1, rgb(196,196,245))
+    );
+}
+
